@@ -15,24 +15,4 @@ public class Passenger {
         return "The passenger name is " + this.name + ", their phone number is " + this.phoneNumber + ", and their unique identifier is " + this.uniqueIdentifier + ".";
     }
 
-    // getters and setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getUniqueIdentifier() {
-        return uniqueIdentifier;
-    }
-
-    public void setUniqueIdentifier(String uniqueIdentifier) {
-        this.uniqueIdentifier = uniqueIdentifier;
-    }
 }

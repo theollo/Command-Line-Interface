@@ -1,5 +1,13 @@
+import java.util.ArrayList;
+
 public class Flight {
-    public static void main(String[] args){
-        System.out.println("Hi");
+    private String flightId;
+    private String flightDestination;
+    private ArrayList<Flight> flights;
+
+    public Flight(String flightId, String flightDestination) {
+        this.flightId = flightId;
+        this.flightDestination = flightDestination;
+        this.flights = new ArrayList<>();
     }
 }
