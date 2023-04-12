@@ -13,4 +13,10 @@ public class Flight {
         this.flightDestination = flightDestination;
         this.passengers= new ArrayList<>();
     }
+    public void addPassengers(Passenger passenger) {
+        this.passengers.add(passenger);
+    }
+    public ArrayList<Passenger> getPassengers(){
+        return passengers;
+    }
 }

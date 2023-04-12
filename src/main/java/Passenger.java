@@ -12,4 +12,11 @@ public class Passenger {
         return "The passenger name is " + this.name + ", their phone number is " + this.phoneNumber + ", and their unique identifier is " + this.uniqueIdentifier + ".";
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 }
