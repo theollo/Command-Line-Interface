@@ -5,7 +5,7 @@ public class Passenger {
 
     public Passenger(String inputName, int phoneNumber, String inputUniqueIdentifier){
         this.name = inputName;
-        this.phoneNumber = 0;
+        this.phoneNumber = phoneNumber;
         this.uniqueIdentifier = inputUniqueIdentifier;
     }
     public void setPhoneNumber(int newPhoneNumber) {
