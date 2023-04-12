@@ -4,7 +4,6 @@ import java.util.Scanner;
 import java.util.WeakHashMap;
 
 public class Airport {
-
     private ArrayList<Flight> flights;
     private static ArrayList<Passenger> passengers;
 
@@ -16,14 +15,10 @@ public class Airport {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-    //   String flightId = null;
-    //   String flightDestination = null;
         ArrayList<String> flights = new ArrayList<String>();
         flights.add("Paris");
         flights.add("New York");
         ArrayList<String> passenger = new ArrayList<String>();
-
-
 
 
         while (true) {
@@ -35,7 +30,7 @@ public class Airport {
             String selection = scanner.nextLine();
 
 
-            if (selection.equals("A")) {
+            if (selection.equals("A")) { // Adding a new Flight and displaying all flights
                 System.out.println("Please enter name of new flight");
                 String newFlight = scanner.nextLine();
                 flights.add(newFlight);
@@ -43,7 +38,7 @@ public class Airport {
 
             }
 
-            if (selection.equals("B")) {
+            if (selection.equals("B")) { // Adding a new Passenger
                 System.out.println("Please enter your Name.");
                 String name = scanner.nextLine();
 
@@ -62,24 +57,17 @@ public class Airport {
             }
                      if (selection.equals("C")) {
 
-
             }
-            if (selection.equals("D"))
+            if (selection.equals("D")) // removing a flight
                 System.out.println("Which flight would you like to remove?");
                 String cancel = scanner.nextLine();
                 flights.remove(cancel);
             System.out.println(flights);
 
             break;
-            }
-       //
-
-
-
-
-
-            }
         }
+    }
+}
 
 
 
